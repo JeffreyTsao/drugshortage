@@ -244,7 +244,8 @@
                tableContent += ' <font size=1.0em>(MW: ' + `${row.api_1}` + ')</font>';
              }
              if (`${row.apismiles1}`!="" && `${row.apismiles1}`!="N/A") {
-	     tableContent += '<BR>&nbsp;&nbsp;<IMG SRC="http://hulab.rxnfinder.org/smi2img/' + encodeURIComponent(`${row.apismiles1}`) + '\/\" width=200 height=200>';
+//	     tableContent += '<BR>&nbsp;&nbsp;<IMG SRC="http://hulab.rxnfinder.org/smi2img/' + encodeURIComponent(`${row.apismiles1}`) + '\/\" width=200 height=200>';
+	       tableContent += '<BR>&nbsp;&nbsp;<IMG SRC="https://cactus.nci.nih.gov/chemical/structure/' + `${row.apismiles1}` + '/image" width=200 height=200>';
              }
         }
         if (`${row.api_name2}`!="" && `${row.api_name2}`!="N/A") {
@@ -253,8 +254,9 @@
                tableContent += ' <font size=1.0em>(MW: ' + `${row.api_2}` + ')</font>';
              }
              if (`${row.apismiles2}`!="" && `${row.apismiles2}`!="N/A") {
-	     tableContent += '<BR>&nbsp;&nbsp;<IMG SRC="http://hulab.rxnfinder.org/smi2img/' + encodeURIComponent(`${row.apismiles2}`) + '\/\" width=200 height=200>';
-             }
+//	     tableContent += '<BR>&nbsp;&nbsp;<IMG SRC="http://hulab.rxnfinder.org/smi2img/' + encodeURIComponent(`${row.apismiles2}`) + '\/\" width=200 height=200>';
+	       tableContent += '<BR>&nbsp;&nbsp;<IMG SRC="https://cactus.nci.nih.gov/chemical/structure/' + `${row.apismiles2}` + '/image" width=200 height=200>';
+	     }
         }
         tableContent += "</div>";
       }
